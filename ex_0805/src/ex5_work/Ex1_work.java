@@ -57,6 +57,8 @@ public class Ex1_work {
 
         sumMoney = am * mAm + lt * mLt + jc * mJc;
         System.out.println("2. 하루 매출 출력 : " + sumMoney);
+
+      //a to the b
         
 
         
