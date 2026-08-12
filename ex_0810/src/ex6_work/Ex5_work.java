@@ -40,6 +40,14 @@ public class Ex5_work {
         }//조건식에서 나눠떨어지면 그 수가 최소공배수
         System.out.println("최소공배수 : " + minNum);//출력
 
+        //방법3
+        for(int i = 1; i <= bigNum * smallNum; i++){
+            if(i % bigNum == 0 && i % smallNum == 0){
+                System.out.println("최소공배수 : " + i);
+                break;
+            }
+        }
+
         sc.close();
     }
 }

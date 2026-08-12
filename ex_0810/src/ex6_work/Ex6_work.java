@@ -12,7 +12,7 @@ public class Ex6_work {
         System.out.print("몇번째까지 출력할까? ");
         int n = sc.nextInt();//입력받기
         
-        int s1 = 0, s2 = 1;//n-1번째 값과, n번째값의 초기화
+        int s1 = 0, s2 = 1;//n-1번째 값과, n번째 값의 초기화
         for(int i = 1; i <= n; i++){
             int s3 = s1 + s2;//n-1번째 값과 n번째 값의 합을 s3에 저장
             System.out.println(i + "번째 수 : " + s3);//출력

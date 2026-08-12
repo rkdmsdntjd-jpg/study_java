@@ -33,6 +33,15 @@ public class Ex4_work {
         }//찾을 때까지 반복하다가 끝까지돌고도 못찾으면 max = 1로 변하지 않음
         System.out.println("최대공약수 : " + max);//출력
 
+        //유클리드 호제법으로 최대공약수 구하기
+        //유클리드 호제법: 두 수의 최대공약수는, 큰 수를 작은 수로 나눈 나머지와 작은 수의 최대공약수와 같다.
+        while (smallNum != 0) {
+            int tmp = bigNum % smallNum;
+            bigNum = smallNum;
+            smallNum = tmp;
+        }
+        System.out.println("최대공약수 : " + bigNum);
+
         sc.close();
     }
 }
