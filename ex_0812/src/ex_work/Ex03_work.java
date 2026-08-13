@@ -27,13 +27,5 @@ public class Ex03_work {
         System.out.println("가장 큰 값: " + bigNum);
         
         sc.close();
-        /*
-        //참고: Arrays.stream(arr).max(); //자바에서 제공하는 최대값 찾는 간단한 방법        
-        Arrays(클래스) : 배열을 다루는 여러 기능을 모아놓은 도구 상자
-        stream() : Arrays의 static Method, arr는 매개변수로 전달
-        stream() : 반환값이 Stream 객체-> 이 Stream 객체가 max()를 호출
-        //즉 something.getA().getB().doSomething() 이런 형태
-        //예시)char c = sc.nextLine().charAt(0);
-         */
     }
 }

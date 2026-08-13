@@ -19,11 +19,6 @@ public class Ex05_work {
         }
         float avg = sum / n;
         System.out.println("-".repeat(24));
-        // . :멤버 접근 연산자(member access operator) or 점 연산자(dot operator)
-        //ex)"-".repeat(24)
-        
-        //메소드 체이닝(method chaining) : 메소드의 반환값에 다시 .으로 메소드를 이어서 호출하는 것
-        //ex) sc.nextLine().charAt(0)
 
         System.out.printf("평균 성적: %.2f\n", avg);
         System.out.println("---평균 이상인 학생들---");

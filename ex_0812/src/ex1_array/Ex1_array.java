@@ -29,9 +29,10 @@ public class Ex1_array {
         //따라서 multiArr1[3][2]라는 자리는 없음. multiArr1[2][1]까지만 있음.
 
         //for문으로 초기화
-        for(int i = 0; i < arr1.length; i++){//배열명.length : 배열의 길이
-        //여기서 length는 메소드가 아닌 필드라서 jvm이 배열 객체의 길이 정보에 바로 접근 가능
-        //String -> length(), ArrayList -> size(), ** 배열 -> length **
+        for(int i = 0; i < arr1.length; i++){
+            //배열명.length : 배열의 길이
+            //여기서 length는 메소드가 아닌 필드라서 jvm이 배열 객체의 길이 정보에 바로 접근 가능
+            //String -> length(), ArrayList -> size(), ** 배열 -> length **
             arr1[i] = (i + 1) * 100;
         }
         for (int n : arr1) {

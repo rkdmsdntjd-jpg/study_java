@@ -13,7 +13,7 @@ public class Ex01_work {
             c[i] = (char)('A' + (i % 26));//26순환 구조 : Z 이후에 다시 A를 출력
             System.out.print("[" + i + "]" + c[i] + " ");
         }
-        /*
+        /*A~Z,a~z순환하는 구조
         for(int i = 0; i < c.length; i++){
             int num = i % 52;
             
