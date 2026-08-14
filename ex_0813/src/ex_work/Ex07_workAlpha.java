@@ -10,11 +10,9 @@ public class Ex07_workAlpha {
         int n = sc.nextInt();
 
         int[][] arr = new int[n][n];//입력받은 수로 배열 생성
-        int startX = n / 2, startY = 0, cntValue = 1;//x시작위치, y시작위치,대입할 값 선언 및 초기화
-        int cnt = n * n;//while문 제어용
+        int startX = n / 2, startY = 0, cntValue = 1;//x시작위치, y시작위치, 대입할 값 선언 및 초기화
 
-        while (true) {
-            if(cnt == 0) break;//count가 0이면 while문 종료
+        while (cntValue <= n * n) {//while문 종료 조건
             
             arr[startY][startX] = cntValue++;//현재 위치에 값을 저장
 
@@ -27,8 +25,8 @@ public class Ex07_workAlpha {
             }
             else{//아니면 시작위치 값을 1증가
                 startY++;
+                //startY = (startY + 1) % n;;
             }
-            cnt--;
         }
 
         for (int[] i : arr) {//결과 출력
