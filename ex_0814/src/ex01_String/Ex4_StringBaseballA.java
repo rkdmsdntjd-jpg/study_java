@@ -3,7 +3,7 @@ package ex01_String;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Ex4_StringA {
+public class Ex4_StringBaseballA {
     public static void main(String[] args) {
         Random rd = new Random();
         Scanner sc = new Scanner(System.in);

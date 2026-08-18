@@ -3,7 +3,7 @@ package ex01_String;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Ex4_String {
+public class Ex4_StringBaseballB {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Random rd = new Random();
@@ -32,10 +32,13 @@ public class Ex4_String {
                 if(number[i] == a[i]){
                     strike++;
                 }
-                for (int j = 0; j < a.length; j++) {
-                    if(i != j && a[i] == number[j])
-                        ball++;
+                else{
+                    for (int j = 0; j < a.length; j++) {
+                        if(i != j && a[i] == number[j])
+                            ball++;
+                    }
                 }
+                
             }         
             System.out.println("----------------");
             System.out.println(strike + "strike, " + ball + "ball");
