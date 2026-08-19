@@ -1,8 +1,12 @@
 package ex2_method;
 
 public class Test {
-    public String average(int n1, int n2, int n3){
-        int num = (n1 + n2 + n3) / 3;
+    public String average(int[] n){
+        int num = 0;
+        for (int i = 0; i < n.length; i++) {
+            num += n[i];
+        }
+        num /= n.length;
         if(num > 50)
             return "합격";
         else

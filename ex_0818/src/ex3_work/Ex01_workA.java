@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class Ex01_workA {
 
-    
-    public void input(Scanner sc){//메인 호출, 입력담당
+    //메인 호출, 입력담당
+    public void input(Scanner sc){
         System.out.println("문자열 입력: ");
         String str = sc.next();
 
