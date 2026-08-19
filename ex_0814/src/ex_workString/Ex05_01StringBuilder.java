@@ -1,6 +1,6 @@
 package ex_workString;
 
-public class Ex05_01work {
+public class Ex05_01StringBuilder {
     public static void main(String[] args) {
         String str1 = "HelloJavaWorld";
 
