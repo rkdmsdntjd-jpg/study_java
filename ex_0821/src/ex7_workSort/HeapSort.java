@@ -2,32 +2,40 @@ package ex7_workSort;
 
 public class HeapSort {
 
-    
+    public void heapSort(int[] arr){
+        int n = arr.length;
 
-    public void heapify(int[] arr, int lastPoint){
-        //최대힙 정렬.
-        for (int i = 0; i <= lastPoint; i++) {
-            int left = 2 * i + 1;
-            int right = 2 * i + 2;
-
-            if(left <= lastPoint && arr[i] < arr[left]){
-                int swap = arr[i];
-                arr[i] = arr[left];
-                arr[left] = swap;
-            }
-            if(right <= lastPoint && arr[i] < arr[right]){
-                int swap = arr[i];
-                arr[i] = arr[right];
-                arr[right] = swap;
-            }   
+        for(int i = n / 2 - 1; i >= 0; i--){ //n / 2 - 1 ->마지막 부모의 위치
+            heapifly(arr, n, i);
         }
-        //시작과 끝 교환
-        int temp = arr[0];
-        arr[0] = arr[lastPoint];
-        arr[lastPoint] = temp;
 
-        for (int i : arr) {
-            System.out.print(i + " ");
+        for(int i = n - 1; i > 0; i--){
+            int temp = arr[0];
+            arr[0] = arr[i];
+            arr[i] = temp;
+
+            heapifly(arr, i, 0);
+        }
+    }
+
+    public void heapifly(int[] arr, int heapSize, int parent){
+        int largest = parent;
+
+        int left = parent * 2 + 1;
+        int right = parent * 2 + 2;
+
+        if(left < heapSize && arr[left] > arr[largest]){
+            largest = left;
+        }
+        if(right < heapSize && arr[right] > arr[largest]){
+            largest = right;
+        }
+        if(largest != parent){
+            int temp = arr[parent];
+            arr[parent] = arr[largest];
+            arr[largest] = temp;
+
+            heapifly(arr, heapSize, largest);
         }
     }
 }
