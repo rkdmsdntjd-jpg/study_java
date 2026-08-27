@@ -6,7 +6,7 @@ import java.util.Random;
 
 public class Intersection {
     public static void main(String[] args) {
-        /*ArrayList 두개 1~5사이의 난수 5개 추가 두개의 리시트 값을 비교하여 교집합 출력 */
+        //ArrayList 두 개, 1~5사이의 난수 5개 추가 두 개의 리스트 값을 비교하여 교집합 출력
         Random rd = new Random();
         List<Integer> list1 = new ArrayList<>();//1집합
         List<Integer> list2 = new ArrayList<>();//2집합
@@ -21,7 +21,8 @@ public class Intersection {
         System.out.println("list2 : " + list2);
 
         for (int i = 0; i < list1.size(); i++) {//교집합을 결과리스트에 저장
-            if(list2.contains(list1.get(i))){
+            if(list2.contains(list1.get(i)) && !res.contains(list1.get(i))){
+                //contains(): 찾는 값을 포함하고 있는지 확인하는 메소드
                 res.add(list1.get(i));
             }
         }

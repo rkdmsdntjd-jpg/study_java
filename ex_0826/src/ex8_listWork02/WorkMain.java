@@ -20,7 +20,7 @@ public class WorkMain {
 
         //여기서 카운트 시작
         ct.start();
-
+        
         while (true) {
             for(int i = 0; i < cnt; i++){//list길이를 주고 추가할 값을 받는다.
                 list.add(data[rd.nextInt(data.length)]);
