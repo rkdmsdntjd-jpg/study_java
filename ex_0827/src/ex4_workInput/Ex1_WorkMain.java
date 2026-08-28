@@ -41,9 +41,8 @@ public class Ex1_WorkMain {
         } finally {
             sc.close();
             try {
-                if(inStream != null){
+                if(inStream != null)
                     inStream.close();
-                }
             } catch (Exception e) {
                 e.printStackTrace();
             }

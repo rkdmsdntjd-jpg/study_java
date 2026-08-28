@@ -1,0 +1,1 @@
+FileWriter : 2byte씩 output도 가능하기 때문에 byte단위로 쪼개지 않아도 됨.

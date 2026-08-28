@@ -36,9 +36,8 @@ public class Ex5_work {
             e.printStackTrace();
         } finally {
             try {
-                if(inStream != null){
+                if(inStream != null)
                     inStream.close();
-                }
             } catch (IOException e) {
                 e.printStackTrace();
             }

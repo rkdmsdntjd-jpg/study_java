@@ -31,9 +31,8 @@ public class Ex5_workA {
             e.printStackTrace();
         } finally {
             try {
-                if(fis != null){
+                if(fis != null)
                     fis.close();
-                }
             } catch (IOException e) {
                 e.printStackTrace();
             }

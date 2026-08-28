@@ -22,7 +22,7 @@ public class ChatClient {
 
             //client이름입력
             System.out.print("name : ");
-            String name = in.next();
+            String name = in.nextLine();
             dos.writeUTF(name);//현재 접속 클라이언트 이름 전송
 
             //발신
@@ -58,6 +58,7 @@ public class ChatClient {
                     }
                 }
             });
+            
             sendMsg.start();
             writeMsg.start();
 
