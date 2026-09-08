@@ -12,7 +12,7 @@ public class UserLoader {
         String path = "C:/java/ex_0828/myFile/User/" + tel + "/save.txt";
         File f = new File(path);
 
-        if(f.exists()){
+        if(f.exists()){//해당 디렉터리가 존재하면
             try (
                 FileInputStream fis = new FileInputStream(f);
                 ObjectInputStream ois = new ObjectInputStream(fis)
